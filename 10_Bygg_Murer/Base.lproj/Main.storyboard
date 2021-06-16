@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s8i-0n-HOH">
+    <device id="ipad10_2" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,257 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_0_Bygg_Murer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bygg og Anlegg: Murer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5de-sa-GYR">
+                                <rect key="frame" x="297" y="171" width="486" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6I-fR-pRs">
+                                <rect key="frame" x="318.5" y="381" width="443" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Trykk her for å se introduksjonsfilm"/>
+                                <connections>
+                                    <action selector="murervideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JdJ-Hs-0q3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdt-rq-MU0">
+                                <rect key="frame" x="387.5" y="579" width="305" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Trykk her for å gå videre"/>
+                                <connections>
+                                    <segue destination="aWO-yf-Ija" kind="show" id="Nju-U2-HBl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="w6I-fR-pRs" firstAttribute="top" secondItem="5de-sa-GYR" secondAttribute="bottom" constant="150" id="Jsq-bb-3iV"/>
+                            <constraint firstItem="5de-sa-GYR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RcM-si-heh"/>
+                            <constraint firstItem="fdt-rq-MU0" firstAttribute="top" secondItem="w6I-fR-pRs" secondAttribute="bottom" constant="150" id="fGM-5N-GmI"/>
+                            <constraint firstItem="fdt-rq-MU0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jHe-qO-QfD"/>
+                            <constraint firstItem="w6I-fR-pRs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="loh-0b-m97"/>
+                            <constraint firstItem="w6I-fR-pRs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tkd-Qi-ahB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="wwf-hd-lzR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="856.66666666666663" y="92.592592592592581"/>
+        </scene>
+        <!--Aktiviteter-->
+        <scene sceneID="u8U-kV-pu9">
+            <objects>
+                <viewController id="aWO-yf-Ija" customClass="Aktiviteter" customModule="_0_Bygg_Murer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bPj-eI-yLu">
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nå skal dere bygge en murbro!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDL-j3-0pk">
+                                <rect key="frame" x="218" y="125.5" width="644" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGE-Ct-JY0">
+                                <rect key="frame" x="429" y="315.5" width="222" height="179.5"/>
+                                <string key="text">Dere trenger:   
+- Murstein
+- Sement/Trekiler
+- Forskaling
+- Trefliser</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uf-rH-rTn">
+                                <rect key="frame" x="400" y="625" width="280" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Trykk her for oppskrift"/>
+                                <connections>
+                                    <segue destination="fj9-MQ-eZw" kind="show" id="wMN-XO-DCP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sDL-j3-0pk" firstAttribute="centerX" secondItem="bPj-eI-yLu" secondAttribute="centerX" id="5YX-zi-oRG"/>
+                            <constraint firstItem="4uf-rH-rTn" firstAttribute="top" secondItem="mGE-Ct-JY0" secondAttribute="bottom" constant="130" id="D5z-RV-ukH"/>
+                            <constraint firstItem="mGE-Ct-JY0" firstAttribute="centerX" secondItem="bPj-eI-yLu" secondAttribute="centerX" id="JDE-RO-ped"/>
+                            <constraint firstItem="4uf-rH-rTn" firstAttribute="centerX" secondItem="bPj-eI-yLu" secondAttribute="centerX" id="XUD-9H-MgX"/>
+                            <constraint firstItem="mGE-Ct-JY0" firstAttribute="top" secondItem="sDL-j3-0pk" secondAttribute="bottom" constant="130" id="cY7-PS-8KB"/>
+                            <constraint firstItem="mGE-Ct-JY0" firstAttribute="centerY" secondItem="bPj-eI-yLu" secondAttribute="centerY" id="e2d-Wy-bBe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="E7a-MM-ixn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="irf-R2-Pun"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZD-44-wIW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871.66666666666663" y="767.40740740740739"/>
+        </scene>
+        <!--Bilde1-->
+        <scene sceneID="RyO-rT-W7X">
+            <objects>
+                <viewController id="N7P-PL-af6" customClass="Bilde1" customModule="_0_Bygg_Murer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WhM-5U-VYL">
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Gwk-zT-gKn">
+                                <rect key="frame" x="0.0" y="50.5" width="1080" height="759"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Gwk-zT-gKn" firstAttribute="top" secondItem="ndN-ey-yZi" secondAttribute="top" id="Dd9-5I-Ork"/>
+                            <constraint firstItem="Gwk-zT-gKn" firstAttribute="bottom" secondItem="ndN-ey-yZi" secondAttribute="bottom" id="hbq-QH-dfr"/>
+                            <constraint firstItem="Gwk-zT-gKn" firstAttribute="trailing" secondItem="ndN-ey-yZi" secondAttribute="trailing" id="ns8-qV-4S9"/>
+                            <constraint firstItem="Gwk-zT-gKn" firstAttribute="leading" secondItem="ndN-ey-yZi" secondAttribute="leading" id="vFE-E9-tAl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ndN-ey-yZi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lpb-Ps-htM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TJK-kg-DrU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030" y="1505.9259259259259"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zd5-pU-cUZ">
+            <objects>
+                <viewController id="fj9-MQ-eZw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JIA-w1-1Qc">
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNp-Qf-cnt">
+                                <rect key="frame" x="103" y="113" width="874" height="585"/>
+                                <mutableString key="text">Oppskrift:
+1. Sett opp forskalingen slik som vist på det første bilde
+
+2. Legg to tre-fliser under forskalingen. Disse skal tas bort før dere fjerner forskalingen når dere er ferdige med murbuen
+
+3. Legg mursteinene oppå forskalingen 
+
+4. Press tre-kilene mellom noen av mursteinene slik at mursteinene
+ sitter godt fast mot hverandre. Se andre bilde
+
+5. Ta vekk tre-flisene under forskalingen
+
+6. Dra forskalingen forsiktig til side. Hvis jobben er gjort riktig skal mursteinene henge oppe i en fin bue 
+
+7. Prøv å press på buen og sjekk om den holder seg oppe
+</mutableString>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeK-Xh-11f">
+                                <rect key="frame" x="477" y="708" width="126" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Bilde nr. 2"/>
+                                <connections>
+                                    <segue destination="zkS-x6-hgY" kind="show" id="cYX-hf-BCb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHP-to-jBE">
+                                <rect key="frame" x="125" y="708" width="122" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Bilde nr. 1"/>
+                                <connections>
+                                    <segue destination="N7P-PL-af6" kind="show" id="7pl-xC-s6U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vi-Gx-ew5">
+                                <rect key="frame" x="833" y="708" width="183" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Se film for tips"/>
+                                <connections>
+                                    <segue destination="IsY-5M-Clc" kind="show" id="Yte-Wl-2Vx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4Vi-Gx-ew5" firstAttribute="top" secondItem="aNp-Qf-cnt" secondAttribute="bottom" constant="10" id="EPA-TU-Suw"/>
+                            <constraint firstItem="iHP-to-jBE" firstAttribute="top" secondItem="aNp-Qf-cnt" secondAttribute="bottom" constant="10" id="Rbp-d3-c6I"/>
+                            <constraint firstItem="6IY-Lf-Ika" firstAttribute="trailing" secondItem="aNp-Qf-cnt" secondAttribute="trailing" constant="103" id="Zkp-Ig-60M"/>
+                            <constraint firstItem="4Vi-Gx-ew5" firstAttribute="leading" secondItem="MeK-Xh-11f" secondAttribute="trailing" constant="230" id="Zrh-aN-4lW"/>
+                            <constraint firstItem="aNp-Qf-cnt" firstAttribute="top" secondItem="6IY-Lf-Ika" secondAttribute="top" constant="63" id="bOC-MZ-oQl"/>
+                            <constraint firstItem="MeK-Xh-11f" firstAttribute="centerX" secondItem="JIA-w1-1Qc" secondAttribute="centerX" id="fJW-c0-Xft"/>
+                            <constraint firstItem="aNp-Qf-cnt" firstAttribute="leading" secondItem="6IY-Lf-Ika" secondAttribute="leading" constant="103" id="h3h-l5-acn"/>
+                            <constraint firstItem="6IY-Lf-Ika" firstAttribute="bottom" secondItem="aNp-Qf-cnt" secondAttribute="bottom" constant="112" id="mAm-Wb-F1h"/>
+                            <constraint firstItem="MeK-Xh-11f" firstAttribute="leading" secondItem="iHP-to-jBE" secondAttribute="trailing" constant="230" id="sks-QV-sTc"/>
+                            <constraint firstItem="MeK-Xh-11f" firstAttribute="top" secondItem="aNp-Qf-cnt" secondAttribute="bottom" constant="10" id="tK8-ZT-eQb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6IY-Lf-Ika"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xxZ-SN-5dG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ua8-IZ-Q3S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1557.7777777777778" y="767.40740740740739"/>
+        </scene>
+        <!--Bilde2-->
+        <scene sceneID="9vr-6e-Ed2">
+            <objects>
+                <viewController id="zkS-x6-hgY" customClass="Bilde2" customModule="_0_Bygg_Murer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qSa-cC-a90">
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vza-ad-Dnj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cda-BK-vb6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6WE-RO-Amf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1653" y="1506"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Dne-RG-c2T">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s8i-0n-HOH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ktn-yt-aPk">
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9Jg-by-x93"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yr8-Im-Sw9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.88888888888889" y="92.592592592592581"/>
+        </scene>
+        <!--Video Aktivitet-->
+        <scene sceneID="mVb-2q-RjJ">
+            <objects>
+                <viewController id="IsY-5M-Clc" customClass="Video_Aktivitet" customModule="_0_Bygg_Murer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sRO-9p-yXa">
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="oh3-uT-MQg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zpO-Vf-hSW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q4p-fv-3ac" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2456" y="1312"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pencil.circle" catalog="system" width="128" height="121"/>
+    </resources>
 </document>

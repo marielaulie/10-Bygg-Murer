@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import AVKit
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -15,6 +15,19 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func murervideo(_ sender: Any) {
+        if let path = Bundle.main.path(forResource: "Murer", ofType: "mp4"){
+        let video = AVPlayer(url: URL(fileURLWithPath: path))
+        let videoPlayer = AVPlayerViewController()
+        videoPlayer.player = video
+                 
+        present(videoPlayer, animated: true, completion:
+            {
+                video.play()
+                
+        })
+             }
+    }
+    
 }
 

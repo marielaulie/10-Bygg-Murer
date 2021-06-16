@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		733E6CFB2678E67600A9E3E2 /* IntroFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733E6CFA2678E67600A9E3E2 /* IntroFilm.swift */; };
+		733E6CFD2678E94E00A9E3E2 /* Aktiviteter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733E6CFC2678E94E00A9E3E2 /* Aktiviteter.swift */; };
+		733E6CFF2679076200A9E3E2 /* Video_Aktivitet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733E6CFE2679076200A9E3E2 /* Video_Aktivitet.swift */; };
+		733E6D0126790F7E00A9E3E2 /* Aktiviteter2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733E6D0026790F7E00A9E3E2 /* Aktiviteter2.swift */; };
+		733E6D032679123E00A9E3E2 /* Bilde1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733E6D022679123E00A9E3E2 /* Bilde1.swift */; };
+		733E6D052679124E00A9E3E2 /* Bilde2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733E6D042679124E00A9E3E2 /* Bilde2.swift */; };
 		73BEA30D2678D2E3005039E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BEA30C2678D2E3005039E6 /* AppDelegate.swift */; };
 		73BEA30F2678D2E3005039E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BEA30E2678D2E3005039E6 /* SceneDelegate.swift */; };
 		73BEA3112678D2E3005039E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BEA3102678D2E3005039E6 /* ViewController.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		733E6CFA2678E67600A9E3E2 /* IntroFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroFilm.swift; sourceTree = "<group>"; };
+		733E6CFC2678E94E00A9E3E2 /* Aktiviteter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aktiviteter.swift; sourceTree = "<group>"; };
+		733E6CFE2679076200A9E3E2 /* Video_Aktivitet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video_Aktivitet.swift; sourceTree = "<group>"; };
+		733E6D0026790F7E00A9E3E2 /* Aktiviteter2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aktiviteter2.swift; sourceTree = "<group>"; };
+		733E6D022679123E00A9E3E2 /* Bilde1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bilde1.swift; sourceTree = "<group>"; };
+		733E6D042679124E00A9E3E2 /* Bilde2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bilde2.swift; sourceTree = "<group>"; };
 		73BEA3092678D2E3005039E6 /* 10_Bygg_Murer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10_Bygg_Murer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BEA30C2678D2E3005039E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73BEA30E2678D2E3005039E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,8 +69,14 @@
 			isa = PBXGroup;
 			children = (
 				73BEA30C2678D2E3005039E6 /* AppDelegate.swift */,
+				733E6CFC2678E94E00A9E3E2 /* Aktiviteter.swift */,
 				73BEA30E2678D2E3005039E6 /* SceneDelegate.swift */,
+				733E6CFE2679076200A9E3E2 /* Video_Aktivitet.swift */,
+				733E6D022679123E00A9E3E2 /* Bilde1.swift */,
+				733E6D042679124E00A9E3E2 /* Bilde2.swift */,
+				733E6D0026790F7E00A9E3E2 /* Aktiviteter2.swift */,
 				73BEA3102678D2E3005039E6 /* ViewController.swift */,
+				733E6CFA2678E67600A9E3E2 /* IntroFilm.swift */,
 				73BEA3122678D2E3005039E6 /* Main.storyboard */,
 				73BEA3152678D2E9005039E6 /* Assets.xcassets */,
 				73BEA3172678D2E9005039E6 /* LaunchScreen.storyboard */,
@@ -138,9 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				733E6D032679123E00A9E3E2 /* Bilde1.swift in Sources */,
 				73BEA3112678D2E3005039E6 /* ViewController.swift in Sources */,
 				73BEA30D2678D2E3005039E6 /* AppDelegate.swift in Sources */,
+				733E6D0126790F7E00A9E3E2 /* Aktiviteter2.swift in Sources */,
+				733E6CFB2678E67600A9E3E2 /* IntroFilm.swift in Sources */,
+				733E6D052679124E00A9E3E2 /* Bilde2.swift in Sources */,
+				733E6CFF2679076200A9E3E2 /* Video_Aktivitet.swift in Sources */,
 				73BEA30F2678D2E3005039E6 /* SceneDelegate.swift in Sources */,
+				733E6CFD2678E94E00A9E3E2 /* Aktiviteter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
